@@ -33,7 +33,7 @@ from engine.recommender import (
 # 設定
 # ─────────────────────────────────────────
 
-MODEL = 'claude-3-5-sonnet-20241022'
+MODEL = 'claude-3-5-sonnet-latest'
 TOP_K          = 5
 DIALOGUE_TURNS = 3
 DATA_PATH      = Path("data/anime_with_sentiments.json")
