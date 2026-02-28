@@ -455,7 +455,7 @@ def main() -> None:
         return
 
     # AI のターン（偶数メッセージ数 = AI が次に話す）
-    if len(msgs) % 2 == 0:
+    if len(msgs) > 0 and len(msgs) % 2 == 0:
         turn_label = f"Turn {user_turn_count + 1} / {DIALOGUE_TURNS}"
         with st.chat_message("assistant"):
             with st.spinner(f"考え中... ({turn_label})"):
